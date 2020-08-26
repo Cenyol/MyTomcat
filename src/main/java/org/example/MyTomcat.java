@@ -12,7 +12,7 @@ import java.util.Map;
 
 /**
  * Hello world!
- *
+ * Ref: https://zhuanlan.zhihu.com/p/136300540
  */
 public class MyTomcat {
 
@@ -29,7 +29,7 @@ public class MyTomcat {
         ServerSocket serverSocket = null;
         try {
             serverSocket = new ServerSocket(port);
-            System.out.print("My Tomcat is listening on 8088...");
+            System.out.println("My Tomcat is listening on 8088...");
 
             while(true) {
                 Socket socket = serverSocket.accept();
