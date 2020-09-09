@@ -13,10 +13,11 @@ import java.util.Map;
 /**
  * Hello world!
  * Ref: https://zhuanlan.zhihu.com/p/136300540
+ * Test: curl -X post http://localhost:8088/hello-world
  */
 public class MyTomcat {
 
-    private static final int port = 8088;
+    private static final int port = 8086;
     private static final Map<String, String> urlServletMap = new HashMap<>();
 
     public static void main( String[] args ) {
@@ -29,7 +30,7 @@ public class MyTomcat {
         ServerSocket serverSocket = null;
         try {
             serverSocket = new ServerSocket(port);
-            System.out.println("My Tomcat is listening on 8088...");
+            System.out.println("My Tomcat is listening on 8086...");
 
             while(true) {
                 Socket socket = serverSocket.accept();
